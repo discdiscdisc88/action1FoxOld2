@@ -22,7 +22,10 @@ public class Test1inTestNg1 {
 
 	@BeforeMethod
 	public void setUp() throws Exception {
-	
+
+		
+		System.out.println("Start");
+		
 		WebDriverManager.firefoxdriver().setup();
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
